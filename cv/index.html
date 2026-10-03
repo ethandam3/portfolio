@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Ethan Dam</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+    <a href="../">Home</a>
+    <a href="../projects/">Projects</a>
+    <a href="../cv/">CV</a>
+    <a href="../contact/">Contact</a>
+    <a href="https://github.com/ethandam3" target="_blank">GitHub</a>
+    </nav>
+
+    <header>
+        <h1>Ethan Duy Minh Dam</h1>
+        <p>
+            <a href="mailto:ethanduydam@gmail.com">ethanduydam@gmail.com</a> |
+            <a href="https://github.com/ethandam3">GitHub</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <p>
+            Data Science senior at UC San Diego (graduating June 2027) working across research ML and production
+            cloud systems. Currently building a multi-camera 3D human pose pipeline at UCSD's Holistic Early Childhood
+            Development Lab: YOLO pose estimation across six synchronized camera views, OSNet re-identification to
+            resolve identity across cameras, and DLT triangulation into analysis-ready 3D coordinates for developmental
+            movement research.
+        </p>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+
+        <article>
+            <header>
+                <h3>Undergraduate Research Assistant</h3>
+                <p>Holistic Early Childhood Development (HECD) Lab, UC San Diego · La Jolla, CA</p>
+                <p><time datetime="2026-06">Jun 2026</time> – Present</p>
+            </header>
+            <ul>
+                <li>Built the 2D pose-extraction stage of a multi-camera research pipeline in Python, running a PyTorch-based YOLOv8 pose model across 6 synchronized camera views to detect 17 COCO keypoints per child per frame; standardized detections into NumPy arrays exported to SLEAP and HDF5, giving developmental researchers analysis-ready movement data without hand-labeling video</li>
+                <li>Implemented cross-camera person re-identification using PyTorch OSNet appearance embeddings (512-dim) and NumPy cosine-similarity matrices, solving identity assignment optimally with the Hungarian algorithm rather than greedy matching, eliminating 5+ hours of manual frame-by-frame annotation per study session</li>
+                <li>Reconstructed 3D joint trajectories via DLT triangulation from checkerboard-calibrated camera intrinsics/extrinsics, parallelizing per-session processing with joblib; validated reconstruction quality using per-joint reprojection statistics summarized in pandas, and applied scene normalization in NumPy to produce analysis-ready arrays</li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h3>Statistics Supplemental Instructor</h3>
+                <p>Golden West College · Huntington Beach, CA</p>
+                <p><time datetime="2024-08">Aug 2024</time> – <time datetime="2025-09">Sep 2025</time></p>
+            </header>
+            <ul>
+                <li>Taught college-level statistics and algebra as an embedded instructor, attending lectures and leading weekly office hours for groups of up to 15 students</li>
+                <li>Designed original practice problem sets targeting hypothesis testing, distributions, and regression, translating abstract concepts into worked examples for students who had struggled with the lecture material</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <article>
+            <header>
+                <h3><a href="https://github.com/ethandam3/solarsentinel">SolarSentinel</a>: Real-Time Solar Anomaly Detection</h3>
+                <p><time datetime="2026-05">May 2026</time></p>
+            </header>
+            <ul>
+                <li>Trained an XGBoost regression model on AWS SageMaker using real Scripps Institution of Oceanography irradiance data, engineering a physics-informed feature set (tilt, azimuth, temperature, UV) in pandas and NumPy and evaluating with scikit-learn metrics to reach MAE &lt; 0.005 kWh, so underperforming panels could be flagged before the loss showed up on a utility bill</li>
+                <li>Architected an end-to-end AWS pipeline (Lambda, DynamoDB Streams, API Gateway WebSockets, S3, SNS) scoring 50 solar installs every 5 minutes and delivering sub-5-second anomaly alerts to a live React dashboard, turning a batch machine learning model into a continuously running monitoring system</li>
+            </ul>
+        </article>
+
+        <article>
+            <header>
+                <h3><a href="https://github.com/ethandam3/triton-pass">TritonPass</a>: BLE-Powered Student Networking App</h3>
+                <p><time datetime="2026-04">Apr 2026</time></p>
+            </header>
+            <ul>
+                <li>Designed a normalized SQL schema in PostgreSQL (users, encounters, conversations) with composite indexes on the encounter-pair columns, cutting match-list query latency on the app's hottest read path</li>
+                <li>Engineered a RESTful Node.js/Express backend with JWT authentication, bcrypt, Socket.io real-time messaging, and Redis caching</li>
+                <li>Built a cross-platform React Native mobile app using Expo/EAS; implemented a BLE scan-and-encounter system and a compatibility scoring algorithm weighting shared interests, major, and transfer year to rank nearby student matches</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+
+        <article>
+            <header>
+                <h3>University of California, San Diego</h3>
+                <p>Bachelor of Science, Data Science · La Jolla, CA</p>
+                <p><time datetime="2025-09">Sep 2025</time> – <time datetime="2027-06">Jun 2027</time></p>
+            </header>
+            <p><strong>Coursework:</strong> DSC 100: Intro to Data Management, DSC 80: Practice and Application of Data Science, DSC 40A: Theoretical Foundations of Data Science, DSC 30: Data Structures &amp; Algorithms, COGS 108: Data Science in Practice</p>
+        </article>
+
+        <article>
+            <header>
+                <h3>Golden West Community College</h3>
+                <p>Associate of Arts, Liberal Arts Computer Science &amp; Technology · Huntington Beach, CA</p>
+                <p><time datetime="2023-08">Aug 2023</time> – <time datetime="2025-08">Aug 2025</time></p>
+            </header>
+            <p><strong>Coursework:</strong> Data Structures, Discrete Structures, Computer Architecture, Linear Algebra, Multivariable Calculus, Introduction to Statistics</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <dl>
+            <dt>Languages</dt>
+            <dd>Python, SQL, R, Java, C++, JavaScript</dd>
+            <dt>Machine Learning &amp; Statistics</dt>
+            <dd>Ultralytics / YOLOv8, scikit-learn, XGBoost, PyTorch, Feature Engineering, Hypothesis Testing, A/B Testing, Regression Analysis, ANOVA, Clustering</dd>
+            <dt>Data Engineering &amp; Cloud</dt>
+            <dd>AWS (SageMaker, Lambda, DynamoDB, S3), AWS CDK, PostgreSQL, Git, Redis, Docker, HDF5</dd>
+            <dt>Data &amp; Analysis</dt>
+            <dd>pandas, NumPy, PySpark/MLlib, OpenCV, Matplotlib, Jupyter Notebook, seaborn, Plotly, SLEAP, SciPy</dd>
+        </dl>
+    </section>
+</body>
+</html>
