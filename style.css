@@ -1,4 +1,92 @@
+/* Step 2.4: accent color */
+:root {
+    --color-accent: oklch(65% 50% 0);
+    accent-color: var(--color-accent);
+}
+
+/* Step 1: keep content from getting too wide */
 body {
-    
     font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: auto;
+    padding: 1em;
+}
+
+/* Step 2: navigation bar */
+nav {
+    display: flex;
+    margin-bottom: 1em;
+    border-bottom: 1px solid oklch(80% 3% 200);
+}
+
+nav a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    padding: 0.5em;
+}
+
+nav a.current,
+nav a:hover {
+    border-bottom: 0.4em solid oklch(80% 3% 200);
+    padding-bottom: 0.1em;
+}
+
+nav a:hover {
+    border-bottom-color: var(--color-accent);
+}
+
+/* Step 3: contact form */
+input,
+textarea,
+button {
+    font: inherit;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+
+label {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+}
+
+button {
+    grid-column: 1 / -1;
+}
+
+/* Step 4: projects page */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+.projects h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
+}
+
+/* Step 5: CV */
+section h2 {
+    border-bottom: 1px solid oklch(80% 3% 200);
 }
