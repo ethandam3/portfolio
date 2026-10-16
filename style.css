@@ -2,6 +2,7 @@
 :root {
     --color-accent: oklch(65% 50% 0);
     accent-color: var(--color-accent);
+    color-scheme: light dark; /* Lab 3 Step 4.1: follow the OS theme */
 }
 
 /* Step 1: keep content from getting too wide */
@@ -14,9 +15,10 @@ body {
 
 /* Step 2: navigation bar */
 nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 1em;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -29,7 +31,7 @@ nav a {
 
 nav a.current,
 nav a:hover {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
+    border-bottom: 0.4em solid var(--border-color);
     padding-bottom: 0.1em;
 }
 
@@ -40,7 +42,8 @@ nav a:hover {
 /* Step 3: contact form */
 input,
 textarea,
-button {
+button,
+select {
     font: inherit;
 }
 
@@ -89,4 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Step 5: CV */
 section h2 {
     border-bottom: 1px solid oklch(80% 3% 200);
+}
+
+/* Lab 3 Step 4.3: theme switcher in the top right corner */
+.color-scheme {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
 }
