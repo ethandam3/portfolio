@@ -102,3 +102,18 @@ section h2 {
     right: 1rem;
     font-size: 80%;
 }
+
+/* Lab 4: GitHub stats in four columns */
+#profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#profile-stats dt {
+    grid-row: 1;
+}
+
+#profile-stats dd {
+    grid-row: 2;
+    margin: 0;
+}

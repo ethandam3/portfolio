@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Multi-Camera 3D Pose Pipeline",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Research pipeline at UCSD's HECD Lab: YOLOv8 pose estimation across 6 synchronized cameras, OSNet re-identification across views, and DLT triangulation into 3D joint trajectories."
+  },
+  {
+    "title": "SolarSentinel",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Real-time solar anomaly detection: an XGBoost model on AWS SageMaker scoring 50 solar installs every 5 minutes, with live alerts on a React dashboard."
+  },
+  {
+    "title": "TritonPass",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "BLE-powered student networking app built with React Native, a Node.js/Express backend, PostgreSQL and real-time messaging."
+  },
+  {
+    "title": "DSC 106 Portfolio Website",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "This site: built with HTML, CSS and JavaScript across the DSC 106 labs, with a JS-generated nav, dark mode and project data loaded from JSON."
+  },
+  {
+    "title": "Statistics Practice Problem Sets",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Original practice problems on hypothesis testing, distributions and regression, written as a Supplemental Instructor at Golden West College."
+  },
+  {
+    "title": "Placeholder Project 6",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  },
+  {
+    "title": "Placeholder Project 7",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  },
+  {
+    "title": "Placeholder Project 8",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  },
+  {
+    "title": "Placeholder Project 9",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  },
+  {
+    "title": "Placeholder Project 10",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  },
+  {
+    "title": "Placeholder Project 11",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  },
+  {
+    "title": "Placeholder Project 12",
+    "year": "2023",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Quo, voluptates."
+  }
+]
