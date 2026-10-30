@@ -117,3 +117,71 @@ section h2 {
     grid-row: 2;
     margin: 0;
 }
+
+/* Lab 5 Step 0.1: project year */
+.projects .year {
+    color: gray;
+    font-family: Baskerville, serif;
+    font-variant-numeric: oldstyle-nums;
+}
+
+/* Lab 5: pie chart + legend side by side */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+#projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+
+    &:has(path:hover) path:not(:hover) {
+        opacity: 0.5;
+    }
+
+    path {
+        transition: 300ms;
+        cursor: pointer;
+    }
+}
+
+.legend {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    padding: 1em;
+    margin: 0;
+    border: 1px solid oklch(50% 10% 200 / 40%);
+    list-style: none;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.swatch {
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: var(--color);
+}
+
+.selected {
+    --color: oklch(60% 45% 0) !important;
+
+    &:is(path) {
+        fill: var(--color);
+    }
+}
+
+.searchBar {
+    width: 100%;
+    margin-block-end: 1em;
+}
