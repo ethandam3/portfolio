@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching",
+    "year": "2026",
+    "image": "https://ethandam3.github.io/portfolio/images/bikewatching.png",
+    "description": "Interactive Mapbox + D3 map of Bluebikes traffic in Boston and Cambridge, with bike lanes, station traffic by size and flow by color, and a time-of-day slider.",
+    "url": "https://ethandam3.github.io/bikewatching/"
+  },
+  {
     "title": "Multi-Camera 3D Pose Pipeline",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
